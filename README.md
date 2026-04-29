@@ -15,6 +15,14 @@ Extraction and labeling of the mitral valve (MV) contour.
 ### 4. Seed Extraction and Regionalization
 Identification of nine anatomical seed points and computation of geodesic paths between them to define atrial regions.
 
+## Results
+
+
+Here are some example outputs generated using this project:
+
+![Visualization of Geodesic Paths](imgs/7_regions.png)
+![3D Reconstruction with Labels](imgs/7_region_label_3.png)
+
 ## Current Limitations
 
 - The current implementation is designed specifically for anatomies with **four pulmonary veins (4 PV configuration)**.
