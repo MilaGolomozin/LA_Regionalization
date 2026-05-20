@@ -12,11 +12,13 @@ Automatic identification and segmentation of the pulmonary veins, followed by as
 ### 2. Mitral Valve Contour Detection
 Extraction and labeling of the mitral valve (MV) contour.
 
+### 3. Mesh Surface Creation
+Creation of a clean, decimated 3D surface mesh from the left atrium segmentation. This step was developed using Rasmus R. Paulsen's [repository]([https://github.com/Bjonze/Public-Cardiac-CT-Dataset?tab=readme-ov-file](https://github.com/RasmusRPaulsen/DTUCreateLabelledTemplateMesh))
+
 ### 4. Seed Extraction and Regionalization
 Identification of nine anatomical seed points and computation of geodesic paths between them to define atrial regions.
 
 ## Results
-
 
 Here are some example outputs generated using this project:
 
@@ -28,7 +30,7 @@ Here are some example outputs generated using this project:
 - The current implementation is designed specifically for anatomies with **four pulmonary veins (4 PV configuration)**.
 - File paths are **hard-coded**, limiting usability across multiple datasets or batch processing scenarios.
 - The pipeline has been **tested on the [Public Cardiac CT Dataset](https://github.com/Bjonze/Public-Cardiac-CT-Dataset?tab=readme-ov-file)**, but has not yet been generalized to other datasets or anatomical variations.
-- The pipeline is also missing step 3 during wich the mesh of the LA surface is created, as that step was executed using code from a private repository. 
+
 
 ## Future Work
 
